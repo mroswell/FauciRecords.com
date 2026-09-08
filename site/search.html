@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search — The Fauci Records</title>
+  <meta name="description" content="Full-text search across every claim and released document.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="search">
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__seal">U.S. Senate<br>HSGAC · Released</span>
+        <span class="brand__title">The Fauci Records</span>
+      </a>
+      <nav>
+        <a href="index.html">Claims</a>
+        <a href="index.html#documents">Documents</a>
+        <a href="search.html" aria-current="page">Search</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="searchwrap">
+      <div class="eyebrow" style="margin-bottom:14px">Search the full text</div>
+      <div class="searchbox">
+        <span class="icn">⌕</span>
+        <input id="q" type="search" autocomplete="off" spellcheck="false"
+               placeholder="Search claims and documents — names, dates, phrases…">
+      </div>
+      <div class="searchmeta" id="searchmeta"></div>
+    </section>
+    <div class="results" id="results"></div>
+  </main>
+
+  <footer class="site">
+    <div class="inner">
+      <p>Search covers the text of all five claims and the transcript of every released document, including OCR'd scanned pages.</p>
+      <p class="fine">Source: 2026.08.29 Final Hearing Document Release Package · Static archive</p>
+    </div>
+  </footer>
+
+  <script src="data/data.js"></script>
+  <script src="assets/search.js"></script>
+</body>
+</html>

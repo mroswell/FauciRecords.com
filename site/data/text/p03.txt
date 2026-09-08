@@ -1,0 +1,43 @@
+UNCLASSIFIED//FOUO
+technologies to study these organisms at a whole genome level not focused on one gene
+at a time. This collaboration between BTC and NIAID not only meets BTC scientific
+requirements but is also directly related to the mission of NIAID and fits well within the
+goals and capacities of the NIAID-funded PFGRC efforts. In carrying out this work
+TIGR should leverage any appropriate preexisting academic collaborations. The work
+shall encompass validation studies for existing bio-threat analytic methods as directed by
+BTC to include test and evaluation of comparative genomic analysis methods such as re-
+sequencing micro-arrays for bacterial pathogens using samples provided by NIAID and
+obtained from other government organizations when applicable with BTC approval and
+facilitation as necessary. Finally, using model pathogen systems that are scientifically
+comparable to existing classes of current bacterial threat agents (with BTC approval),
+conduct work to further development of comparative analysis analytic tools as forensic
+analytic tools, validate interpretive criteria to include in addition to traditional sequence-
+based genotyping approaches.
+3.0 TASKS
+Task 3.1: Within 1 month of including budget and transfer LAA agreement, the
+contractor shall produce a detailed work execution plan for comparative analyses
+and validation studies using DNA resequencing microarrays specific for
+Francisella tularensis with the possibility to expand the studies to include other
+bioterror threat agents. The plan shall be presented to the government Sponsor
+(BTC) and NIAID during a Contract Initiation Review (CIR) mecting. The
+validation studies must include work to examine the mutational stability of
+genetic loci of forensic utility present in the genomes of these pathogens. NIAID
+will provide sample sets for this purpose that leverage other government
+collaborations and BTC will facilitate NIAID obtaining sample sets from other
+US Government entities as appropriate. This task should comprise approximately
+15% of the overall effort under this contract. BTC shall take the lead to ensure
+NIAID success with respect to obtaining the required sample sets.
+Task 3.2: Within two months of [AA award the contractor shal] start the work
+outlined in Task 3.1 focusing initial studies first on Francisella tularensis and
+proceeding to the other pathogens. BTC will aid NIAID in obtaining the
+appropriate samples sets for conducting the analyses. By the end of the contract
+period the contractor shall produce a report that describes all of the results and
+interpretations from these studies. The report should also include extensive
+discussions on the impact of variations in mutational rates seen at different
+limitations of interpretations. The government sponsors shall be kept informed of
+the progress on this task through quarterly reports and bimonthly meetings during
+which progress, data, and any project relevant difficulties are discussed and
+resolved with the government COTR. With the routual consent of the government
+sponsors the frequency of the bimonthly meetings can be adjusted as progress on
+UNCLASSIFIED//FOUO
+a

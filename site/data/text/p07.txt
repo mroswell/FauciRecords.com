@@ -1,0 +1,17 @@
+For the IAA:
+The CIA considers all technical data developed using funds transferred to NIAID under
+this Interagency Agreement to be sensitive, but unclassified, with respect to National
+Security for the development of forensic attribution capabilities in bio-defense, and as
+such should not be used, modified, performed, displayed, released or disclosed, in whole
+or in part in any manner and for any purpose whatsoever without the CIA’s permission.
+This information should be treated as For Official Use Only (FOUO). Accordingly,
+NIAID shall include the following clause in any contract for the development of technical
+data using CIA funds provided under this IAA. If a contractor refuses to accept this
+clause, or substantially similar terms, NIAID will promptly bring such refusal to the
+CIA’s attention and will not proceed with the award of the contract without authorization
+of the CLA. NIAID will not authorize the contractor to use or disclose such data without
+the prior permission of the CIA. Unless required by law, regulation or court order, NIAID
+will not disclose such information in its possession or control without first seeking the
+CIA's permission. NIAID will make reasonable efforts to promptly inform the CIA of
+any request or requirement for disclosure.
+|

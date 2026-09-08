@@ -1,0 +1,57 @@
+tomorrow’s sub-IPC meeting is focused on federal decisions about funding research that may raise dual use
+concerns.
+
+Regards,
+Amy
+
+ Issue/Workstream                  Timeframe    Lead        Other Players        Status/Next Steps        Assumptions, Caveats,
+                                                                                                          Questions, Comments
+ 1.    Develop a mechanism         Immediate    NIH         ·    Other HHS       ·    Comments            Assumes that the
+      for secure distribution of                                components           received from        journals will publish an
+      information withheld                                      (CDC, OS/ASPR)       CDC, OGC, and        abridged version of
+      from published H5N1                                   ·    Other USG           ASPR                 both manuscripts.
+      manuscripts                                               components       ·    Revisions will be   This is not 100%
+                                                                (State,              finalized            certain.
+                                                                Commerce,            12/20/11
+                                                                other science    ·    After HHS           Has the HHS position
+                                                                agencies,            position             been finalized and is
+                                                                security             developed, need      NIH responsible for
+                                                                agencies)            to convene           convening the
+                                                                                     interagency          interagency
+                                                                                     discussion           discussion? Kris and
+                                                                                                          Diane DiEuliis seemed
+                                                                                                          to think so.
+ 2.    Develop a formal, USG-      Very short   NIH?                             Sub-IPC is discussing    Kris said that Heidi is
+      wide “upstream”              term                                          this Tuesday, Dec 20.    very adamant about
+      process by which              (within 2                                                             this and that whatever
+      science funding agencies     weeks)                                                                 NIH decides will be a
+      assess the dual use                                                                                 USG-wide process.
+      potential of research
+      being considered for
+      funding and determine
+      whether any conditions
+      need to be set for those
+      determined to be DURC
+      (dual use research of
+      concern). For example,
+      should the work be
+      conducted at all, does
+      the work need to be
+      classified, should there
+      be notice of potential
+      restrictions on
+      communication or
+      sharing of research
+      materials?
+ 3.    Assess all current life     Very short   All                                                       This is simply not
+      sciences research            term         agencies                                                  feasible in a 2 week
+      funded by USG agencies       (within 2    that fund                                                 period. Program staff
+      and identify those that      weeks)       life                                                      will need to be trained
+      may pose DUR concerns.                    sciences                                                  about DUR and what
+                                                research                                                  to look for.
+ 4.    Develop a mechanism         Mid-term     ???         ·    Other HHS       NSABB is currently
+      for disseminating any                                     components       deliberating on the
+      DURC information                                          (CDC, OS/ASPR)   attributes of what
+      determined to warrant                                 ·    Other USG       information should
+      restricted                                                components       not be broadly
+      communication.                                                             disseminated and the
