@@ -8,7 +8,17 @@ import re
 import json
 from config import DATA_DIR, TEXT_DIR, TOTAL_PAGES
 from manifest import META, EXHIBITS, CLAIMS
+from corrections import CORRECTIONS, PAGE_OVERRIDES
 from reflow import reflow_text
+
+
+def _apply_corrections(page, text, used):
+    """Apply source-of-truth OCR fixes (corrections.py) on top of reflowed text."""
+    for wrong, right in CORRECTIONS.get(page, []):
+        if wrong in text:
+            text = text.replace(wrong, right)
+            used.add((page, wrong))
+    return text
 
 
 def _load_pages():
@@ -16,10 +26,24 @@ def _load_pages():
     with open(path) as fh:
         raw = json.load(fh)
     # keys come back as strings from JSON; reflow the raw line-broken text into
-    # readable paragraphs for display and search
+    # readable paragraphs for display and search, then apply corrections on top
     pages = {}
+    used = set()
     for k, v in raw.items():
-        pages[int(k)] = {"text": reflow_text(v["text"]), "ocr": v["ocr"]}
+        p = int(k)
+        if p in PAGE_OVERRIDES:
+            text = PAGE_OVERRIDES[p]           # whole-page replacement
+        else:
+            text = _apply_corrections(p, reflow_text(v["text"]), used)
+        pages[p] = {"text": text, "ocr": v["ocr"]}
+    # a correction whose `wrong` string was never found is stale — surface it
+    for page, pairs in sorted(CORRECTIONS.items()):
+        if page in PAGE_OVERRIDES:
+            continue
+        for wrong, _right in pairs:
+            if (page, wrong) not in used:
+                print(f"  WARNING: correction for p{page:02d} not applied "
+                      f"(string not found): {wrong!r}")
     return pages
 
 
