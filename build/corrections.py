@@ -35,6 +35,19 @@ CORRECTIONS = {
     31: [
         ("he s full of", "he's full of"),               # dropped apostrophe
     ],
+    # Claim 2, Doc 1 — CIA/WCPMC memo (memo-wcpmc-fauci); all scan-verified.
+    # "SARS COV-2" left as-is: the document's own formatting, not OCR.
+    19: [
+        ("National institute of Allergy", "National Institute of Allergy"),
+        ("Or. Fauci and CIA experts", "Dr. Fauci and CIA experts"),
+        ("Or. Fauci expressed concern", "Dr. Fauci expressed concern"),
+        ("epidemiclogical", "epidemiological"),
+        ("natura! reservoir", "natural reservoir"),
+        ("suggested the iC connect", "suggested the IC connect"),
+        ("fall of 2019, He encouraged", "fall of 2019. He encouraged"),
+        ("COVID-19 Infection", "COVID-19 infection"),
+        ("public health channels,", "public health channels."),
+    ],
 }
 
 # Whole-page text replacements. When a page's OCR is too degraded for surgical
@@ -42,6 +55,51 @@ CORRECTIONS = {
 # to replacement text here; it fully replaces the reflowed OCR for that page.
 # The page image on the site remains the authoritative record either way.
 PAGE_OVERRIDES = {
+    # Claim 2, Doc 2 — ODNI email (email-odni-recommendations, p13). Body OCR was
+    # clean but the routing headers were badly garbled and partly redacted, and
+    # the divider/bullet glyphs became gibberish that can't be safely find/replaced
+    # (tokens like "oo"/"ca"/"ee" would match inside other words). Rebuilt by hand
+    # from the 300 DPI page image. "[redacted]" marks black-bar addresses;
+    # "Kristian Anderson" is left as the document's own spelling (Andersen), not OCR.
+    13: (
+"""From: Alan S. Macdougall-DNI-
+Sent: Monday, July 12, 2021 3:14 PM
+To: James Murphy-DNI-; Stuart H. Schwark-DNI-
+Cc: Kelly B. Chafin-DNI-; Kathryn H. Brinsfield-DNI-; Terrance H. SHIPPENSBERG-DNI-; James Mcevers-DNI-; Sarah J. Lawrence-DNI-
+Subject: FW: Covid origins - Dr. Fauci recommendations
+Attachments: Holmes_et_al-preprint_v1.0_converted.pdf
+Classification: UNCLASSIFIED//FOUO
+============================================================
+
+Murph and Stu,
+
+(U//FOUO) FYSA from last week's IC Weekly Update. We can discuss further based on my chat with Charles.
+
+VR,
+Alan
+
+From: Charles E. Luftig-DNI- <[redacted]@dni.ic.gov>
+Sent: Monday, July 12, 2021 2:50 PM
+To: Alan S. Macdougall-DNI- <[redacted]@dni.ic.gov>
+Cc: Morgan Muir-DNI- <[redacted]@dni.ic.gov>; Meghan L. BLIZNIAK-DNI- <[redacted]@dni.ic.gov>
+Subject: Covid origins - Dr. Fauci recommendations
+Classification: UNCLASSIFIED//FOUO
+============================================================
+
+Alan – The article that Dr. Fauci highlighted last week is attached, and the authors whose views he thought were particularly important were:
+
+• Edward Holmes
+• Kristian Anderson
+• Andrew Rambaut
+
+As discussed, it might be worth considering the article and talking with these individuals in connection with the 90-day study. In addition, the COVID report rollout is scheduled to be discussed on Friday at the IC Weekly. Please provide any materials or information you want the DNI to convey NLT Thursday COB.
+
+Thanks,
+Charles
+
+Charles Luftig
+Chief of Staff, ODNI"""
+    ),
     # Claim 1, Doc 5, p32 — COVID case-count table (Worldometer screenshot in
     # the forwarded email). OCR was unusable; transcribed by hand from the page
     # image at 450 DPI. Country rows are arithmetic-verified (recovered+active+
