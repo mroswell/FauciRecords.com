@@ -47,13 +47,28 @@ def _load_pages():
     return pages
 
 
+def _release_numbers(ex):
+    """Printed release (production) number for each page, from the manifest range.
+    Handles single ('101') and range ('96-100'); returns None for pages of
+    exhibits with no release numbers (the Fauci emails). The stamp itself is a
+    front-end constant; only this number varies per page, so only it is stored."""
+    first, last = ex["pages"]
+    rng = ex.get("release")
+    if not rng:
+        return {p: None for p in range(first, last + 1)}
+    start = int(re.split(r"[–-]", rng)[0].strip())
+    return {first + i: start + i for i in range(last - first + 1)}
+
+
 def _exhibit_pages(ex, pages):
     first, last = ex["pages"]
+    rel = _release_numbers(ex)
     out = []
     for p in range(first, last + 1):
         info = pages.get(p, {"text": "", "ocr": False})
         out.append({
             "page": p,
+            "release": rel[p],
             "img": f"assets/pages/p{p:02d}.png",
             "thumb": f"assets/pages/p{p:02d}-thumb.png",
             "text": info["text"],

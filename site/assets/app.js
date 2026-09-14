@@ -57,6 +57,18 @@
     }).join("");
   }
 
+  // Canonical release stamp shown at the top of every source page. The wording is
+  // constant; only the printed release number (release) varies, and is null for
+  // the Fauci emails, which carry no release number.
+  function stampHtml(release) {
+    var num = (release === null || release === undefined) ? "" :
+      '<span class="release-stamp__num">' + esc(String(release)) + "</span>";
+    return '<div class="release-stamp">' +
+      '<span class="release-stamp__text">Released by Chairman Rand Paul — ' +
+      "Entered into the record by Chairman Rand Paul at the July 29, 2026 HSGAC " +
+      'Hearing titled, “Testimony of Anthony Fauci”.</span>' + num + "</div>";
+  }
+
   /* ---------- notes toggle (persisted) ---------- */
   function initNotesToggle() {
     // Editor's notes are ON by default; a prior explicit toggle (localStorage) wins.
@@ -202,6 +214,7 @@
           '<div class="pageblock__label"><span>Page ' + p.page + "</span>" + ocrFlag + "</div>" +
         "</div>" +
         '<div class="transcript"><h4>Transcript — page ' + p.page + "</h4>" +
+          stampHtml(p.release) +
           transcriptHtml(p.text) + "</div>";
       pages.appendChild(block);
     });

@@ -48,6 +48,59 @@ CORRECTIONS = {
         ("COVID-19 Infection", "COVID-19 infection"),
         ("public health channels,", "public health channels."),
     ],
+    # Claim 3, Doc 1 — CIA Bioforensics SOW (sow-bioforensics), word-level fixes.
+    # Left as original-document typos per user: #1 Biologicial, #2 Centeral, #23 "the the".
+    # #8 reflects a redaction; #14 collapses a garbled span. Punctuation (#31-37),
+    # stamp fragments (#38-39), and garbled/redacted blocks (#40-43) still pending.
+    2: [
+        ("To mect the", "To meet the"),                       # #3
+        ("scicntific", "scientific"),                          # #4
+        ("NLAD", "NIAID"),                                     # #5
+        ("cfforts", "efforts"),                                # #6
+        ("29 SCOPE", "2.9 SCOPE"),                             # #7 (per user's read of scan)
+        ("at thei level", "at the [redacted] level"),          # #8
+        ("(ITIC), Currently", "(ITIC). Currently"),            # #31
+        ("such technique", "such as technique"),               # #33  (#32 skipped: original)
+    ],
+    3: [
+        ("transfer LAA", "transfer IAA"),                      # #9
+        ("mecting", "meeting"),                                # #10
+        ("of [AA award", "of IAA award"),                      # #11
+        ("shal]", "shall"),                                    # #12
+        ("routual", "mutual"),                                 # #13
+    ],
+    4: [
+        ("This task y/\nthis Tepresents", "This task represents"),  # #14
+        ("of [AA NIAID", "of IAA NIAID"),                      # #15
+        ("goverment", "government"),                           # #16
+        ("thesc", "these"),                                    # #17
+        ("onc electronic", "one electronic"),                  # #18
+        ("shal!", "shall"),                                    # #19 (x2)
+        ("shal]", "shall"),                                    # #20
+        ("comparisons, Where", "comparisons. Where"),          # #34
+        ("questions, This task", "questions. This task"),      # #35
+        ("requested, The", "requested. The"),                  # #36
+        # #38 remove garbled stamp remnant (the canonical stamp now renders as a header)
+        (".- Entered into the record by Chairman Rand\n", ""),
+    ],
+    5: [
+        ("44 Progress", "4.4 Progress"),                       # #21
+        ("delieverables", "deliverables"),                     # #22
+        ("uscd", "used"),                                      # #24
+        ("using CLA funds", "using CIA funds"),                # #25a
+        ("of the CLA. NIAID", "of the CIA. NIAID"),            # #25b
+        ("inform the CLA of", "inform the CIA of"),            # #25c
+        ("under this LAA", "under this IAA"),                  # #26
+        ("tegulation", "regulation"),                          # #27
+        ("Alj other", "All other"),                            # #28
+        ("{government)", "(government)"),                       # #37
+        # #39 remove garbled stamp remnant (canonical stamp now renders as a header)
+        (". Entered into the record by Chairman Rand\n", ""),
+    ],
+    6: [
+        ("NIAD Points", "NIAID Points"),                       # #29
+        ("Infectious Discases", "Infectious Diseases"),        # #30
+    ],
 }
 
 # Whole-page text replacements. When a page's OCR is too degraded for surgical
