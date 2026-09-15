@@ -106,6 +106,23 @@ CORRECTIONS = {
         ("of the CLA.", "of the CIA."),                        # #1
         ("\n\n|", ""),                                         # #2 stray page-edge pipe
     ],
+    # Claim 3, Doc 3 — D&F Memorandum (df-memo), p8-9. #6-7 skipped: document's own
+    # wording ("Finding", "Infectious Disease"). Garbled blocks reconstructed with
+    # [signature]/[redacted]; ATP title reconstructed from its own defined acronym.
+    8: [
+        ("{U)", "(U)"),                                        # #1 brace->paren
+        ("[X}", "[X]"),                                        # #2 checkbox
+        ("Request Number ——", "Request Number [redacted]"),   # #8
+        ("\n\na el", ""),                                      # #9 stray artifact
+    ],
+    9: [
+        ("{] b.", "[ ] b."),                                  # #3 empty checkbox
+        ("‘The servicing", "The servicing"),                  # #4 stray quote
+        ("[ } c.", "[ ] c."),                                 # #5 checkbox
+        ("oe a a 7 Date\nDST/ATP/BTC\n[ee Date OS™\nChief\nDST/ATP Contracts\nirector o rea  echnologies\nand Programs (ATP)",
+         "[signature]   Date\nDST/ATP/BTC\n[signature]   Date\nChief, DST/ATP Contracts\nDirector of Advanced Technologies and Programs (ATP)"),  # #10
+        ("\nene", ""),                                        # #11 stray footer artifact
+    ],
 }
 
 # Whole-page text replacements. When a page's OCR is too degraded for surgical
