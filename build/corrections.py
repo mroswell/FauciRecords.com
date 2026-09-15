@@ -101,6 +101,11 @@ CORRECTIONS = {
         ("NIAD Points", "NIAID Points"),                       # #29
         ("Infectious Discases", "Infectious Diseases"),        # #30
     ],
+    # Claim 3, Doc 2 — Non-disclosure clause (iaa-nondisclosure), p7.
+    7: [
+        ("of the CLA.", "of the CIA."),                        # #1
+        ("\n\n|", ""),                                         # #2 stray page-edge pipe
+    ],
 }
 
 # Whole-page text replacements. When a page's OCR is too degraded for surgical
