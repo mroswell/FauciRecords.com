@@ -123,6 +123,30 @@ CORRECTIONS = {
          "[signature]   Date\nDST/ATP/BTC\n[signature]   Date\nChief, DST/ATP Contracts\nDirector of Advanced Technologies and Programs (ATP)"),  # #10
         ("\nene", ""),                                        # #11 stray footer artifact
     ],
+    # Claim 4, Doc 1 — BSEG Action Request Form (bseg-form), p14-16. Garbled/redacted
+    # form fields (B2-B4) reconstructed from the 150 DPI scan; black bars shown as
+    # [redacted] per the p8-9/p13 convention. "MERS-CoV" and the informal field
+    # phrasings left as the document's own text.
+    14: [
+        ("\n—— at", ""),                                       # A1 stray page-bottom artifact
+    ],
+    15: [
+        ("ClA/MPH", "CIA/MPH"),                                # B1 C-l-A misread
+        ("Global Health Team\nContact i jon.",
+         "Global Health Team\nPOC Name/Title: [redacted] PhD/Global Health Analyst\nContact information:"),  # B2 dropped POC line + garbled label
+        ("Secure lint Unclass anaes (CenaifFesisicx0s",
+         "Secure line [redacted] Unclass line [redacted] ICemail [redacted]@cia.ic.gov"),  # B3 garbled + redacted line
+        ("Project Title: est for Mutation sf Vv hy\npassage risk",
+         "Project Title: Request for Mutation Frequency of MERS-CoV and Assessment of human passage risk"),  # B4
+        ("fecti i and Pandemic Potential",
+         "(U) Infectious Diseases and Pandemic Potential"),    # B5
+        ("to Jock in these mutations", "to lock in these mutations"),  # B6 J->l misread
+        ("UNCLASSIFIED//FOUO .\noe", "UNCLASSIFIED//FOUO"),    # B7 stray " ." + "oe" artifacts
+    ],
+    16: [
+        ("is requested, Most of", "is requested. Most of"),    # C1 comma->period
+        ("\nee", ""),                                          # C2 stray page-bottom artifact
+    ],
 }
 
 # Whole-page text replacements. When a page's OCR is too degraded for surgical
