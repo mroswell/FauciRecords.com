@@ -46,6 +46,15 @@
     if (!text) return '<p class="empty">[No machine-readable text on this page.]</p>';
     return text.split(/\n[ \t]*\n/).map(function (block) {
       var lines = block.split("\n");
+      // bullet block: every line starts with •/◦/▪ (level = glyph). Render as a
+      // real list so wrapped lines hang-indent under the text, not the margin.
+      var bul = lines.map(function (l) { return l.match(/^\s*([•◦▪])\s+(.*)$/); });
+      if (bul.length && bul.every(Boolean)) {
+        return '<ul class="bullets">' + bul.map(function (m) {
+          var lv = m[1] === "•" ? 1 : (m[1] === "◦" ? 2 : 3);
+          return '<li class="lvl' + lv + '">' + esc(m[2]) + "</li>";
+        }).join("") + "</ul>";
+      }
       var tabular = lines.some(function (l) {
         return (l.match(/\S {2,}/g) || []).length >= 2;
       });

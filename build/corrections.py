@@ -135,6 +135,10 @@ PAGE_OVERRIDES = {
     # shown as ([redacted]), stray artifacts removed. Bullets: OCR lost all
     # indentation, so per user "=" is a 2nd-tier bullet (◦) and every other glyph
     # is a regular bullet (•).
+    # Claim 3, Doc 4 — NIAID/USAMRIID minutes (minutes-niaid-usamriid), p10-12.
+    # Rebuilt from tesseract x-coordinates + content: 3 indent levels (•/◦/▪,
+    # indented with non-breaking spaces). Deepest items (former "="/"*") capped to
+    # level 3. Word fixes applied; garbled action-item POC notes shown as ([redacted]).
     10: (
 """NIAID/USAMRIID Coordinating Meeting Minutes:
 11 March 2002
@@ -142,59 +146,59 @@ PAGE_OVERRIDES = {
 • A meeting between NIAID and USAMRIID/USAMRMC Program Managers was held at USAMRIID on 11 March 2002 (see enclosure).
 • An overview of the USAMRIID program was provided by LTC Korch. It included a comparison of the similarities and the differences in the DOD vs. HHS program objectives.
 • Dr. Heilman outlined the major goals of the NIH Bioterrorism Response Program
-• Reagent repository
-• Development of scientific expertise with specific threat agents
-• Regional centers of excellence
-• Emphasize a broader definition of what constitutes a threat agent
-• Utilize large funding stream to simultaneously support multiple efforts
+  ◦ Reagent repository
+  ◦ Development of scientific expertise with specific threat agents
+  ◦ Regional centers of excellence
+  ◦ Emphasize a broader definition of what constitutes a threat agent
+  ◦ Utilize large funding stream to simultaneously support multiple efforts
 • Areas of potential collaboration were discussed. Dr. Fauci emphasized the importance of making a quick win that can show the public the value added by a NIAID-USAMRIID collaboration. Goal will be to ensure that efforts of NIAID satisfy requirements of the DOD program as indicated in their Operational Requirements Document (ORD).
-• rPA vaccine (highest priority for both NIAID and DOD)
-• Work on this effort is proceeding
-• NIAID supporting Phase I clinical trial
-• Long-term rate limiting step to licensure is a potency assay
-◦ USAMRIID working on mouse immunogenicity model
-• Orthopoxvirus therapeutics
-• Leverage NIAID funded contract to screen antivirals
-• Contractors have BSL-3 capability
-• Proposed transfer of Monkeypox virus from USAMRIID to contractors to use in screening program
-• Diagnostics
-• Weak point for NIAID
-• NIAID has been communicating with DARPA
-• USAMRIID weak in microarray
-• Leverage existing NIAID contract with TIGR to do array work
-• Reagent Repository
-• USAMRIID has many strains and reagents that could be provided
-• NIAID would fund expansion of reagents, including QC, similar to what was done for the AIDS program"""
+  ◦ rPA vaccine (highest priority for both NIAID and DOD)
+    ▪ Work on this effort is proceeding
+    ▪ NIAID supporting Phase I clinical trial
+    ▪ Long-term rate limiting step to licensure is a potency assay
+    ▪ USAMRIID working on mouse immunogenicity model
+  ◦ Orthopoxvirus therapeutics
+    ▪ Leverage NIAID funded contract to screen antivirals
+    ▪ Contractors have BSL-3 capability
+    ▪ Proposed transfer of Monkeypox virus from USAMRIID to contractors to use in screening program
+  ◦ Diagnostics
+    ▪ Weak point for NIAID
+    ▪ NIAID has been communicating with DARPA
+    ▪ USAMRIID weak in microarray
+    ▪ Leverage existing NIAID contract with TIGR to do array work
+  ◦ Reagent Repository
+    ▪ USAMRIID has many strains and reagents that could be provided
+    ▪ NIAID would fund expansion of reagents, including QC, similar to what was done for the AIDS program"""
     ),
     11: (
-"""• USAMRIID could leverage repository for their own use
-• Animal Testing
-• Animal holding space: major limiting factor
-• Availability of NHPs: another problem
-• USAMRIID
-◦ Has extensive aerosol capability
-◦ Established SOPs and animal models that could be leveraged
-◦ Could be used
-• USAMRIID asked to provide cost estimate for expanded animal holding space to NIAID
-• Alternate models: area of potential investment by NIAID
-• Assays: USAMRIID has established SOPs that could be leveraged by NIAID
-• Rift Valley Fever Virus (RVF)
-• NIAID considers it an important pathogen
-• Interested in pursuing further development of the USAMRIID products
-• NIAID requesting assistance in identifying potential international study sites
-• Plague Vaccine: potential area of collaboration
-• Botulinum neurotoxin
-• NIAID interested in transfer of USAMRIID heptavalent equine product
-• Proteomics: NIAID could leverage funding to support large-scale effort and share results/information with USAMRIID
-• Clinical Trials: NIAID’s existing investment in clinical trial centers could be leveraged by USAMRIID to conduct Phase I studies for their mature vaccine products
+"""    ▪ USAMRIID could leverage repository for their own use
+  ◦ Animal Testing
+    ▪ Animal holding space: major limiting factor
+    ▪ Availability of NHPs: another problem
+    ▪ USAMRIID
+    ▪ Has extensive aerosol capability
+    ▪ Established SOPs and animal models that could be leveraged
+    ▪ Could be used
+    ▪ USAMRIID asked to provide cost estimate for expanded animal holding space to NIAID
+    ▪ Alternate models: area of potential investment by NIAID
+    ▪ Assays: USAMRIID has established SOPs that could be leveraged by NIAID
+  ◦ Rift Valley Fever Virus (RVF)
+    ▪ NIAID considers it an important pathogen
+    ▪ Interested in pursuing further development of the USAMRIID products
+    ▪ NIAID requesting assistance in identifying potential international study sites
+  ◦ Plague Vaccine: potential area of collaboration
+  ◦ Botulinum neurotoxin
+    ▪ NIAID interested in transfer of USAMRIID heptavalent equine product
+  ◦ Proteomics: NIAID could leverage funding to support large-scale effort and share results/information with USAMRIID
+  ◦ Clinical Trials: NIAID’s existing investment in clinical trial centers could be leveraged by USAMRIID to conduct Phase I studies for their mature vaccine products
 • Dr. Heilman emphasized that NIAID is very interested in collaborating with USAMRIID in this effort. Proposed a series of follow-on meetings to discuss details.
 • ACTION ITEMS:
-• USAMRIID and NIAID will each exchange lists of potential areas of collaboration that they see ([redacted] and Heilman)
-• USAMRIID will provide NIAID with a cost estimate for additional animal holding space ([redacted])"""
+  ◦ USAMRIID and NIAID will each exchange lists of potential areas of collaboration that they see ([redacted] and Heilman)
+  ◦ USAMRIID will provide NIAID with a cost estimate for additional animal holding space ([redacted])"""
     ),
     12: (
-"""• USAMRIID will prepare a set of guidelines to NIAID regarding their ability to accept funding through Interagency Agreements ([redacted])
-• USAMRIID will provide NIAID a copy of the Requirements document for the rPA vaccine ([redacted])"""
+"""  ◦ USAMRIID will prepare a set of guidelines to NIAID regarding their ability to accept funding through Interagency Agreements ([redacted])
+  ◦ USAMRIID will provide NIAID a copy of the Requirements document for the rPA vaccine ([redacted])"""
     ),
     # Claim 2, Doc 2 — ODNI email (email-odni-recommendations, p13). Body OCR was
     # clean but the routing headers were badly garbled and partly redacted, and

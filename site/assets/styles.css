@@ -370,6 +370,20 @@ body.show-notes .notes-toggle .dot { background: var(--oxblood); box-shadow: 0 0
   padding: 12px 14px; background: var(--paper); border: 1px solid var(--paper-edge);
   border-radius: 3px;
 }
+.transcript ul.bullets { list-style: none; margin: 0 0 1.05em; padding: 0; }
+.transcript ul.bullets li {
+  position: relative; padding-left: 1.5em;
+  margin-top: .28em; margin-bottom: .28em; line-height: 1.6;
+}
+.transcript ul.bullets li::before {
+  position: absolute; left: .35em; color: var(--ink-soft);
+}
+.transcript ul.bullets li.lvl1 { margin-left: 0; }
+.transcript ul.bullets li.lvl1::before { content: "\2022"; }          /* • */
+.transcript ul.bullets li.lvl2 { margin-left: 2.8em; }
+.transcript ul.bullets li.lvl2::before { content: "\25E6"; }          /* ◦ */
+.transcript ul.bullets li.lvl3 { margin-left: 5.6em; }
+.transcript ul.bullets li.lvl3::before { content: "\25AA"; font-size: .72em; top: .12em; }
 .release-stamp {
   font-family: var(--font-mono); font-size: .6rem; line-height: 1.55;
   letter-spacing: .05em; text-transform: uppercase; color: var(--ink-faint);
