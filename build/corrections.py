@@ -147,6 +147,27 @@ CORRECTIONS = {
         ("is requested, Most of", "is requested. Most of"),    # C1 comma->period
         ("\nee", ""),                                          # C2 stray page-bottom artifact
     ],
+    # Claim 5, Doc 1 — EXSUM re: Dr. Scott Gottlieb (exsum-gottlieb), p17-18.
+    # Marking is "UNCLASSIFIED//AIUO" (scan-verified). "arranged by [redacted]" is a
+    # black bar. Left as the document's own text: "will be use to advantage" (author
+    # grammar), "30 ~ 60%", Ro (BRR), Astra-Zeneca, Innova, Regeneron's, 20-25%.
+    17: [
+        ("UNCLASSiFIED//ALUO", "UNCLASSIFIED//AIUO"),          # A1 top marking
+        ("and arranged by nr", "and arranged by [redacted]"),  # A2 black-bar redaction
+        ("from OG! and WCPMC", "from OGI and WCPMC"),          # A3 !->I
+        ("Massachusetts Govemor", "Massachusetts Governor"),   # A4 rn->m
+        ("(AE!)", "(AEI)"),                                    # A5 !->I
+        ("news network CNBC, Before", "news network CNBC. Before"),  # A6 comma->period
+        ("value of 3 for SARS-CoV-2, Current", "value of 3 for SARS-CoV-2. Current"),  # A7 comma->period
+        ("between 1 in10 and 1 in 20", "between 1 in 10 and 1 in 20"),  # A8 missing space
+        ("similar to H1N41, but", "similar to H1N1, but"),     # A9 spurious 4
+        ("UNCLASSIFIED//AIU0", "UNCLASSIFIED//AIUO"),          # A10 bottom marking 0->O
+    ],
+    18: [
+        ("not very immunogenic,", "not very immunogenic."),    # B1 comma->period
+        ("his general impression Is that", "his general impression is that"),  # B2 stray capital
+        ("” Or. Gottlieb discounts", "” Dr. Gottlieb discounts"),  # B3 Or.->Dr.
+    ],
 }
 
 # Whole-page text replacements. When a page's OCR is too degraded for surgical
