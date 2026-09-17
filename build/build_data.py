@@ -9,7 +9,7 @@ import json
 from config import DATA_DIR, TEXT_DIR, TOTAL_PAGES
 from manifest import META, EXHIBITS, CLAIMS
 from corrections import CORRECTIONS, PAGE_OVERRIDES
-from reflow import reflow_text
+from reflow import reflow_text, repair_paragraphs
 
 
 def _apply_corrections(page, text, used):
@@ -32,9 +32,10 @@ def _load_pages():
     for k, v in raw.items():
         p = int(k)
         if p in PAGE_OVERRIDES:
-            text = PAGE_OVERRIDES[p]           # whole-page replacement
+            text = PAGE_OVERRIDES[p]           # whole-page replacement (hand-authored)
         else:
             text = _apply_corrections(p, reflow_text(v["text"]), used)
+            text = repair_paragraphs(text)     # heal spurious mid-sentence breaks
         pages[p] = {"text": text, "ocr": v["ocr"]}
     # a correction whose `wrong` string was never found is stale — surface it
     for page, pairs in sorted(CORRECTIONS.items()):
