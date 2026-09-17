@@ -57,10 +57,18 @@ CORRECTIONS = {
         ("scicntific", "scientific"),                          # #4
         ("NLAD", "NIAID"),                                     # #5
         ("cfforts", "efforts"),                                # #6
-        ("29 SCOPE", "2.9 SCOPE"),                             # #7 (per user's read of scan)
+        ("29 SCOPE", "2.0 SCOPE"),                             # #7 (scan-verified 2.0; every section heading is .0)
         ("at thei level", "at the [redacted] level"),          # #8
         ("(ITIC), Currently", "(ITIC). Currently"),            # #31
         ("such technique", "such as technique"),               # #33  (#32 skipped: original)
+        # Group B (scan-verified): title, partnership block, PFRGC/SCOPE line, footer.
+        ('Statement of Work For —"\' is a | support',
+         "Statement of Work For Bioforensics R&D technical support\n[redacted]"),  # #40 title + redacted line
+        ("building a partnership with ‘The collaborative efforts between\n\nTIG! luct in Integrated Bio-threat Forensics-\n\nSystems Biology.",
+         "building a partnership with [redacted]. The collaborative efforts between TIGR and [redacted] are producing a research Program in Integrated Bio-threat Forensics-Systems Biology."),  # #41 partnership block
+        ("BTC requests that NIAID contract with TIGR under the NL ogen\nFunctional Genomics Resource Cena PREC) oo vt\n\nwork to support",
+         "BTC requests that NIAID contract with TIGR under the NIAID Pathogen Functional Genomics Resource Center (PFRGC) contract ([redacted]) to conduct work to support"),  # #42 PFRGC/SCOPE line
+        ("UNCLASSIFIED//FOUO —————s", "UNCLASSIFIED//FOUO"),   # footer artifact
     ],
     3: [
         ("transfer LAA", "transfer IAA"),                      # #9
@@ -68,6 +76,7 @@ CORRECTIONS = {
         ("of [AA award", "of IAA award"),                      # #11
         ("shal]", "shall"),                                    # #12
         ("routual", "mutual"),                                 # #13
+        ("UNCLASSIFIED//FOUO\n\na", "UNCLASSIFIED//FOUO"),     # Group B footer artifact
     ],
     4: [
         ("This task y/\nthis Tepresents", "This task represents"),  # #14
@@ -82,6 +91,7 @@ CORRECTIONS = {
         ("requested, The", "requested. The"),                  # #36
         # #38 remove garbled stamp remnant (the canonical stamp now renders as a header)
         (".- Entered into the record by Chairman Rand\n", ""),
+        ("UNCLASSIFIED//FOUO —— et", "UNCLASSIFIED//FOUO"),    # Group B footer artifact
     ],
     5: [
         ("44 Progress", "4.4 Progress"),                       # #21
@@ -96,6 +106,9 @@ CORRECTIONS = {
         ("{government)", "(government)"),                       # #37
         # #39 remove garbled stamp remnant (canonical stamp now renders as a header)
         (". Entered into the record by Chairman Rand\n", ""),
+        # Group B (scan-verified): redacted FEDEX address block + footer artifact.
+        ("sent by FEDEX to: Alternatively", "sent by FEDEX to: [redacted] Alternatively"),
+        ("UNCLASSIFIED//FOUO\n\nMire nas", "UNCLASSIFIED//FOUO"),
     ],
     6: [
         ("NIAD Points", "NIAID Points"),                       # #29
